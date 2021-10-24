@@ -17,13 +17,13 @@ import { useParams } from 'react-router-dom';
 export default function Trek(props) {
     const [trek, setTrek] = useState([]);
     const id = useParams().id;
-
     let location = { lat: 19.020473, lng: 72.843323 };
-
 
     let trekDate = new Date(trek.date).toUTCString().substring(5, 17);
     useEffect(() => {
+        console.log("useeffet executed");
         axios.get("/trek/" + id).then((response) => {
+            console.log("settrek triggered:", response.data[0])
             setTrek(response.data[0]);
         });
     }, []);
@@ -222,7 +222,7 @@ export default function Trek(props) {
                             </div>
                         </div>
 
-{/* 
+                        {/* 
                         <div className="location-map">
                             <h2 className="heading">
                                 Location Map
