@@ -1,0 +1,135 @@
+.trek {
+    padding-top: 64px;
+    width: 100%;
+}
+
+.trek .trek-left-section, .trek .trek-right-section {
+    padding: 0px !important;
+}
+
+.trek .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.trek .container-grid {
+    max-width: 1200px;
+}
+
+.trek .title,
+.trek .details,
+.trek .highlights,
+.trek .overview,
+.trek .itinerary,
+.trek .more-details,
+.trek .included-excluded,
+.trek .location-map {
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 24px 24px;
+    margin: 32px 16px;
+}
+
+.trek .title .location {
+    display: flex;
+    align-items: center;
+}
+
+.trek .details-item {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+.trek .details-item-info {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trek .details-item-title {
+    font-weight: 600;
+}
+
+.trek .details-item svg {
+    font-size: 3em;
+    color: var(--primary);
+}
+
+.trek .images {
+    height: auto;
+    padding: 0px;
+    margin: 32px 16px;
+}
+
+.trek img {
+    width: 100%;
+}
+
+.trek .heading {
+    font-size: 1.5em;
+    font-weight: 600;
+    border-left: 4px solid var(--primary);
+    padding: 4px 16px 4px 24px;
+    margin: 8px 0px 16px 0px;
+    text-transform: capitalize;
+}
+
+.trek .sub-heading {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.trek .description {
+    line-height: 1.8em;
+    text-justify: inter-word;
+}
+
+.trek .itinerary .itenerary-day {
+    margin-bottom: 24px;
+}
+
+.trek .itinerary .itenerary-day-title {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.trek .itinerary .description {
+    padding-left: 48px;
+}
+
+.trek .more-details .points {
+    margin-left: 24px;
+}
+
+.trek .more-details .trek-info, .trek .more-details .things-to-carry, .trek .more-details .difficulty {
+    line-height: 1.8em;
+    text-justify: inter-word;
+    margin-bottom: 24px;
+} 
+
+.trek .included-item, .trek .excluded-item {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.trek .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.trek .icon .check-icon {
+    color: var(--primary);
+}
+
+.trek .icon.cross-icon {
+    color: var(--FreeSpeechRed);
+}
+
+.trek .location-map {
+    max-width: 820px;
+}

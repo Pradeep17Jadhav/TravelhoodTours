@@ -1,0 +1,11 @@
+.add-trek {
+    padding-top: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.add-trek .container {
+    max-width: 1200px;
+    padding-top: 16px;
+}

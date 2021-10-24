@@ -1,0 +1,16 @@
+.appbar {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    z-index: 999;
+    height: 64px;
+    min-width: 100%;
+    background-color: #fff;
+    padding: 0px 64px;
+}
+
+.appbar-logo {
+    height: 48px;
+    width: 48px;
+}

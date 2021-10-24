@@ -1,0 +1,70 @@
+.photobox {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    height: 400px;
+    width: auto;
+    z-index: 0;
+}
+
+.photobox-thumbnail {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    margin-bottom: 16px;
+    background-size: cover !important;
+    background-position: center;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transition:0.5s;
+}
+
+.photobox:hover >.photobox-thumbnail {
+    transition: 0.5s;
+    transform:scale(1.1);
+    -webkit-filter: brightness(70%);
+    filter: brightness(60%);
+}
+
+.photobox-content {
+    padding-left: 32px;
+    padding-top: 128px;
+    transition:0.3s;
+    height: 400px;
+}
+
+.photobox-content:hover {
+    padding-left: 32px;
+    padding-top: 96px;
+    transition:0.3s;
+}
+
+.photobox-title {
+    color: #fff;
+    font-size: 32px !important;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.photobox-description {
+    color: #fff;
+    font-size: 16px !important;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.photobox-button {
+    color: #fff;
+    font-size: 16px !important;
+    margin-top: 64px;
+    text-transform: uppercase;
+    transition:0.3s;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.photobox-content:hover > .photobox-button {
+    transition:0.3s;
+    opacity: 1;
+}
+
