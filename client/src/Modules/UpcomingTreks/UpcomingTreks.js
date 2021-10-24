@@ -17,10 +17,6 @@ export default function UpcomingTreks(props) {
 
     if (!arrUpcomingTreks) return null;
 
-    let OnTrekClicked = (trekId) => {
-        window.open("http://localhost:3000/trek/" + trekId , "_self");
-    }
-
     return (
         <div className="upcomingTreks">
             <h1>Upcoming Treks</h1>

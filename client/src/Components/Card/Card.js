@@ -3,10 +3,11 @@ import "./Card.css";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import EventIcon from "@material-ui/icons/Event";
+require("dotenv").config();
 
 //card file
 export default function Card(props) {
-    const trekUrl = "http://localhost:3000/trek/" + props.id;
+    const trekUrl = process.env.URL + "/trek/" + props.id;
 
     return (
         <div className="card">
