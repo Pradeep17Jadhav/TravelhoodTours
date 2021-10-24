@@ -25,7 +25,7 @@ export default function Trek(props) {
     console.log("useeffect defined");
     useEffect(() => {
         console.log("useeffet executed");
-        axios.get("/trek/" + id).then((response) => {
+        axios.get("/trekID/" + id).then((response) => {
             console.log("settrek triggered:", response.data[0])
             setTrek(response.data[0]);
         });
