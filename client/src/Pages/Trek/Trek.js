@@ -25,11 +25,8 @@ export default function Trek(props) {
     useEffect(() => {
         axios.get("/trek/" + id).then((response) => {
             setTrek(response.data[0]);
-            console.log(response.data[0]);
         });
     }, []);
-
-    if (!trek) return null;
 
     return (
         <div className="trek">
