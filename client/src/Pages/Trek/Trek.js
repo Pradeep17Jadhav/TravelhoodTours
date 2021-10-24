@@ -15,11 +15,14 @@ import axios from "axios";
 import { useParams } from 'react-router-dom';
 
 export default function Trek(props) {
+    console.log("trek exec started");
     const [trek, setTrek] = useState([]);
     const id = useParams().id;
     let location = { lat: 19.020473, lng: 72.843323 };
 
     let trekDate = new Date(trek.date).toUTCString().substring(5, 17);
+
+    console.log("useeffect defined");
     useEffect(() => {
         console.log("useeffet executed");
         axios.get("/trek/" + id).then((response) => {
@@ -27,9 +30,11 @@ export default function Trek(props) {
             setTrek(response.data[0]);
         });
     }, []);
+    console.log("useeffect define end");
 
     return (
         <div className="trek">
+            {console.log("return function")}
             <FloatingPricing
                 date={trekDate}
                 price={trek.price}
