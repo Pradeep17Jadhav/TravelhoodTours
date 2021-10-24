@@ -7,7 +7,7 @@ require("dotenv").config();
 
 //card file
 export default function Card(props) {
-    const trekUrl = process.env.URL + "/trek/" + props.id;
+    const trekUrl = process.env.URL + "trek/" + props.id;
 
     return (
         <div className="card">
