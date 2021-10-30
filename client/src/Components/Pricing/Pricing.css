@@ -3,12 +3,12 @@
     border-radius: 4px;
     background-color: #fff;
     padding: 24px 24px;
-    margin: 32px 16px;
+    margin: 24px 16px;
     display: none;
     text-align: center;
     line-height: 2em;
     position: sticky;
-    top: 97px;
+    top: 88px;
 }
 
 @media (min-width: 960px) {
