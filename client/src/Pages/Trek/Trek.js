@@ -178,7 +178,7 @@ export default function Trek(props) {
                             </h2>
                             <div className="trek-info">
                                 <div className="sub-heading">Trek Info</div>
-                                <div className="points">
+                                <div className="description">
                                     Washroom facilities are common for everyone. <br />
                                     Bonfire is common for everyone. <br />
                                     Children below 5 years of age will not be charged.<br />
@@ -187,7 +187,7 @@ export default function Trek(props) {
                             </div>
                             <div className="things-to-carry">
                                 <div className="sub-heading">Things To Carry</div>
-                                <div className="points">
+                                <div className="description">
                                     Back pack (50-60l) <br />
                                     Water bottle <br />
                                     Mosquito and insect repellen
@@ -195,7 +195,7 @@ export default function Trek(props) {
                             </div>
                             <div className="difficulty">
                                 <div className="sub-heading">Difficulty</div>
-                                <div className="points">
+                                <div className="description">
                                     Difficulty is moderate. <br />
                                     Begginers can join. <br />
                                     Patients with heart diseases should not join the trek

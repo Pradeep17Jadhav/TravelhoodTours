@@ -117,7 +117,7 @@
     padding-left: 24px;
 }
 
-.trek .more-details .points {
+.trek .more-details .description {
     margin-left: 24px;
 }
 
@@ -184,7 +184,11 @@
         margin: 24px 0px;
     }
 
-    .trek .more-details .points {
+    .trek .more-details .description {
         margin-left: 0px;
+    }
+
+    .trek .description {
+        font-size: 0.85em !important;
     }
 }

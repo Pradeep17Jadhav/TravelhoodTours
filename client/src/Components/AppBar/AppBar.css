@@ -19,3 +19,9 @@
 a:hover {
     color: var(--text);
 }
+
+@media (max-width: 720px) {
+    .appbar {
+        padding: 0px 16px;
+    }
+}
