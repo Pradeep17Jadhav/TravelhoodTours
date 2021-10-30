@@ -21,7 +21,7 @@
 }
 
 .footer a:hover {
-    color: #fff;
+    color: var(--primary);
     transition: 0.2s;
 }
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Grid } from '@material-ui/core';
 import './Trek.css';
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import ImageGallery from 'react-image-gallery'; //Documentation - https://www.npmjs.com/package/react-image-gallery
 import Pricing from "../../Components/Pricing/Pricing";
 import FloatingPricing from "../../Components/FloatingPricing/FloatingPricing";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
@@ -15,22 +15,31 @@ import axios from "axios";
 import { useParams } from 'react-router-dom';
 
 export default function Trek(props) {
-    console.log("trek exec started");
     const [trek, setTrek] = useState([]);
     const id = useParams().id;
     let location = { lat: 19.020473, lng: 72.843323 };
-
     let trekDate = new Date(trek.date).toUTCString().substring(5, 17);
 
-    console.log("useeffect defined");
     useEffect(() => {
-        console.log("useeffet executed");
         axios.get("/trekID/" + id).then((response) => {
-            console.log("settrek triggered:", response.data[0])
             setTrek(response.data[0]);
         });
     }, []);
-    console.log("useeffect define end");
+
+    const images = [
+        {
+            original: 'https://picsum.photos/id/1018/1000/600/',
+            thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        },
+        {
+            original: 'https://picsum.photos/id/1015/1000/600/',
+            thumbnail: 'https://picsum.photos/id/1015/250/150/',
+        },
+        {
+            original: 'https://picsum.photos/id/1019/1000/600/',
+            thumbnail: 'https://picsum.photos/id/1019/250/150/',
+        },
+    ];
 
     return (
         <div className="trek">
@@ -108,7 +117,7 @@ export default function Trek(props) {
 
 
                         <div className="images">
-                            <img src={trek.thumbnailUrl} alt={trek.name} />
+                            <ImageGallery items={images} />
                         </div>
 
                         <div className="highlights">

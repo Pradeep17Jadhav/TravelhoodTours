@@ -11,13 +11,14 @@
     border-top: 1px solid #f8f8f8;
 }
 
-@media (min-width: 960px)  {
+@media (min-width: 960px) {
     .floatingPricing {
         display: none;
     }
 }
 
-.floatingPricing .price-box, .floatingPricing .next-date {
+.floatingPricing .price-box,
+.floatingPricing .next-date {
     font-size: 12px;
     float: left;
     padding: 0px 16px;
@@ -26,13 +27,13 @@
 .floatingPricing .price {
     font-size: 1.3em;
     font-weight: 600;
-    color: rgba(0,0,0,0.87);
+    color: rgba(0, 0, 0, 0.87);
 }
 
 .floatingPricing .date {
     font-size: 1.3em;
     font-weight: 600;
-    color: rgba(0,0,0,0.87);
+    color: rgba(0, 0, 0, 0.87);
 }
 
 .floatingPricing .contact-booking {
@@ -46,7 +47,10 @@
     float: right;
 }
 
-.floatingPricing button, .floatingPricing button:hover {
-    background-color: #4787E8;
+.floatingPricing button {
+    background-color: var(--primary);
 }
 
+.floatingPricing button:hover {
+    background-color: var(--primaryHover);
+}

@@ -35,7 +35,7 @@ app.get("/getTrek", async (req, res) => {
     }
 });
 
-app.get("/trekID/:id", async (req, res) => {
+app.get("/trekId/:id", async (req, res) => {
     try {
         const user = await upComingTreks.find({ id : req.params.id});
         res.json(user);
