@@ -46,7 +46,6 @@
 .trek .details-item {
     display: flex;
     justify-content: center;
-    font-size: 0.9em;
 }
 
 
@@ -174,7 +173,18 @@
 }
 
 @media (max-width: 480px) {
-    body {
-        font-size: 0.8em;
+    .trek .title,
+    .trek .details,
+    .trek .highlights,
+    .trek .overview,
+    .trek .itinerary,
+    .trek .more-details,
+    .trek .included-excluded,
+    .trek .location-map {
+        margin: 24px 0px;
+    }
+
+    .trek .more-details .points {
+        margin-left: 0px;
     }
 }
