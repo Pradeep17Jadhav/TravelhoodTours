@@ -1,44 +1,59 @@
+@import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
 :root {
-  --primary: #00CC99;
-  --text: rgba(0,0,0,87);
-  --FreeSpeechRed: #bf1000;
+    --primary: #00CC99;
+    --primaryHover: #03daa4;
+    --primaryDark: #007c5d;
+    --text: rgba(0, 0, 0, 0.8);
+    --warning: #bf1000;
 }
 
 body {
-  margin: 0;
-  font-family: 'Montserrat', 'Roboto', 'Arial', 'sans-serif' !important;
-  color: var(--text);
-  background-color: #f6f8fb;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: 'Montserrat', 'Roboto', 'Arial', 'sans-serif' !important;
+    color: var(--text);
+    background-color: #f6f8fb;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     line-height: 1.4em;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently */
+}
 
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-      -moz-user-select: none; /* Old versions of Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
-          user-select: none; /* Non-prefixed version, currently */
-  
-    /* font-size: 1em;
-  background-image: url("./Components/UnderConstructionPage/bg.jpg");
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh; */
+@media (max-width: 720px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.8em;
+    }
 }
 
 a {
-  text-decoration: none;
-  transition: 0.3s;
+    text-decoration: none;
+    transition: 0.3s;
+    color: var(--text);
+}
+a:hover {
+    transition: 0.3s;
 }
 
-.a:hover {
-  transition: 0.3s;
+button {
+    font-weight: 600 !important;
 }
-
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

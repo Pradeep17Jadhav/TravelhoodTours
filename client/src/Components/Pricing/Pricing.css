@@ -11,32 +11,30 @@
     top: 97px;
 }
 
-@media (min-width: 960px)  {
+@media (min-width: 960px) {
     .pricing {
         display: block;
     }
 }
 
-
-.pricing .price-box, .pricing .next-date {
-    display:inline-block;
+.pricing .price-box,
+.pricing .next-date {
+    display: inline-block;
     border-bottom: 2px solid var(--primary);
     padding-bottom: 16px;
     margin-bottom: 24px;
 }
 
 .pricing .price {
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: 600;
     color: var(--primary);
 }
 
 .pricing .date {
-    color: var(--primary);
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 600;
 }
-
 
 .pricing .contact-booking {
     text-align: center;
@@ -46,11 +44,12 @@
 }
 
 .pricing button {
-    background-color: #4787E8;
+    background-color: var(--primary);
     padding: 6px 8px;
     width: 100%;
 }
+
 .pricing button:hover {
-    background-color: #60a0ff;
+    background-color: var(--primaryHover);
     width: 100%;
 }

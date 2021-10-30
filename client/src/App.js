@@ -4,6 +4,7 @@ import Homepage from "./Pages/Homepage/Homepage";
 import Trek from "./Pages/Trek/Trek";
 import AddTrek from "./Pages/AddTrek/AddTrek";
 import AppBar from "./Components/AppBar/AppBar";
+import Footer from './Components/Footer/Footer'
 import {
     BrowserRouter as Router,
     Route,
@@ -24,9 +25,7 @@ function App() {
                     <Route path="/admin/addTrek" component={AddTrek} />
                 </Switch>
             </Router>
-
-            {/* <Homepage /> */}
-            {/* <Trek /> */}
+            <Footer />
         </div>
     );
 }

@@ -13,4 +13,9 @@
 .appbar-logo {
     height: 48px;
     width: 48px;
+    margin-right: 16px;
+}
+
+a:hover {
+    color: var(--text);
 }
