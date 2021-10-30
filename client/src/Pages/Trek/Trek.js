@@ -208,7 +208,7 @@ export default function Trek(props) {
                                 Included / Excluded
                             </h2>
                             <div className="description">
-                                <Grid container spacing={3}>
+                                <Grid container>
                                     <Grid className="included" key={"included"} item sm={12} md={6}>
                                         {(trek.included || []).map((point) => {
                                             return (
